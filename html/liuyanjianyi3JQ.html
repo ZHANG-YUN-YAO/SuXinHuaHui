@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		.box{
+			width: 1366px;
+			height: 900px;
+			background-color: rgb(240,240,240);
+			text-align: center;
+			position: relative;
+		}
+		main{
+			width: 700px;
+			height: 800px;
+			background-color: white;
+			position: absolute;
+			left: 150px;
+		}
+		.aside{
+			width: 320px;
+			height: 340px;
+			background-color:  white;
+			position: absolute;
+			left: 880px
+		}
+		h3{
+			color: red;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		section{
+			width: 620px;
+			
+			position: absolute;
+			top: 20px;
+			left: 40px;
+			padding-bottom: 10px;
+		}
+		section ul{
+			list-style: none;
+		}
+		ul li{
+			width: 100%;
+			height:54px;
+			padding: 4px;
+			text-align: left; 
+			border-bottom: 1px solid rgba(0,0,0,0.3);  
+		}
+		
+		ul  img{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			margin-right: 20px;
+			float: left;
+			margin-top: 8px;
+
+		}
+		section ul li p{
+			
+			color: rgba(0,0,0,0.4);
+
+
+		}
+		ul li a {
+			text-decoration: none; 
+			color: rgba(0,0,0,0.6);
+
+		}
+		input{
+			width: 270px;
+			height: 30px;
+			margin-top: 18px;
+			outline: none;
+			border: 1px solid rgba(0,0,0,0.3);
+		}
+		textarea{
+			width: 270px;
+			height: 100px;
+			margin-top: 20px;
+			resize: none;
+			outline: none;
+			border: 1px solid rgba(0,0,0,0.3);
+		}
+		button{
+			width: 270px;
+			height:26px;
+			display: block;
+			position: relative;
+			top: 20px;
+			left: 26px;
+			color: white;
+			border: 0;
+			outline: none;
+			background-color:rgb(98,168,234);
+		}
+		button:hover{
+			background-color:rgb(137,188,235);
+		}
+		
+		.time{
+			margin-left: 450px;
+			margin-top: -36px;
+			color: lightgrey;
+		}
+		
+	</style>	
+</head>
+<body>
+	<div class="box">
+		<h3>我要留言</h3>
+		<main>
+			<section>		
+				<ul>
+					<a href="#"><img src="../image/man.jpg"></a>
+					<li>
+						<a href="#">张三</a>
+						<p>更新有点慢</p>
+						<div class="time">2018-9-2/3:23</div>
+					</li>
+				</ul>
+			</section>
+		</main>
+
+		<div class="aside">
+			<input class="name" type="" name="" placeholder="姓名">
+			<input class="num" type="" name="" placeholder="联系电话">
+			<textarea placeholder="您的建议"></textarea>
+			<input class="numl" type="" name="" placeholder="验证码">
+			<button>提交</button>
+		</div>
+			
+		</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	// let text=document.querySelector("textarea");
+	// $("textarea");
+	// // let num=document.querySelector("input");
+	// $("input");
+	// // let input=document.querySelector(".aside input");
+	// $(".aside input");
+	// // let btn=document.querySelector("button");
+	// $("button");
+	// // let ul=document.querySelector("ul");
+	// $("ul");
+	// console.log($("input"));
+
+	// 自动检测输入内容的宽度
+	// $("textarea").blur(function(){
+	// 	// let textnum=this.value.length;
+	// 	$("input").html($("textnum").val().length);
+	// })
+	$("button").click(function(){
+		let name=$(".aside input").val();
+		let con=$("textarea").val();
+		let time= new Date();
+		let time1=time.getFullYear();
+		let time2=time.getMonth()+1;
+		let time3=time.getDate();
+		let time4=time.getHours(); 
+		let time5=time.getMinutes();
+		str=`<a href="#"><img src="../image/man.jpg"></a>
+					<li>
+						<a href="#">${name}</a>
+						<p>${con}</p>
+						<div class="time">${time1+"-"+time2+"-"+time3+"/"+time4+":"+time5}</div>
+					</li>`
+
+				// console.log(str);
+
+		// innerHTML---可识别标签
+		// 追加到后面
+		$("ul").append(str);
+		// 清空右侧留言
+		$(".aside input").val("");
+		$("textarea").val("");
+		$("input").html=("0");
+
+	})
+	// 点击图片删掉
+	$("img").click(function(){
+    $(this).parent("li").remove();
+})
+
+	// 时间委派
+
+
+	// 鼠标移入时添加背景色
+	// let li=document.querySelectorAll("li");
+	// $("li");
+	// console.log(li);
+	for(let i=0;i<$("li").length;i++){
+		$("li").eq(i).mouseover(function(){
+			$("li").eq(i).css({"background":"rgba(0,0,0,0.1)"});
+		})
+		$("li").eq(i).mouseout(function(){
+			$("li").eq(i).css({"background":""});
+		})
+	}
+
+</script>

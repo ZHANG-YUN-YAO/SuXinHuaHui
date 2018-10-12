@@ -1,0 +1,438 @@
+	body{
+		width: 1366px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		
+	}
+
+	.head{
+		width:100%;
+		height:750px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		
+		}
+		.head .left{
+			width: 180px;
+			height:685px;
+			background-image: linear-gradient(180deg,rgba(0,0,0,0.05),rgba(0,0,0,0.02));
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 999;
+		}
+
+		.head .right{
+			width: 180px;
+			height:685px;
+			background-image: linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.05));
+			position: absolute;
+			z-index: 99;
+			right: 0px;			
+		}
+
+		.head .left> i{
+			font-size: 32px;
+			color: rgba(0,0,0,0.3);
+			position: absolute;
+			z-index: 999;
+			left: 100px;
+			top: 400px;
+			font-weight: bold;
+		}
+
+
+		.head .right> i{
+			font-size: 32px;
+			font-weight: bold;
+			color: rgba(0,0,0,0.3);
+			position: absolute;
+			z-index: 999;
+			left: 1220PX;
+			top: 400px;
+		}
+	
+	.head>a>img{
+		width:1366px;
+		height: 750px;
+		padding: 0 ;
+		z-index: 10;
+		left: 0;
+		top: 0;
+		position: absolute;
+	}
+
+	.head>a.two{
+		z-index: 9;
+	}
+
+	.top{
+		width:1366px;
+		height: 65px;
+		background-color: rgba(0,0,0,0.1);
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 100;			
+
+	}
+
+
+	.top>a{
+		width:135px;
+		height: 65px;
+		margin-left: 100px;
+		
+	}
+
+	.text{
+		float:right;
+	}
+
+	.text>a{
+		margin-right: 10px;
+		margin-top: 20PX;
+		color: white;
+		font-size: 16px;
+		text-decoration: none;
+		text-align: right;
+		float: right;
+	}
+
+	.text>a.hot{
+		color: blue;
+		font-size: 16px;
+		text-decoration: none;
+	}
+
+	div .text{
+		margin-right: 100px;
+	}
+
+	.text>a:hover {
+		color: blue;
+	}
+
+	.head>p{
+		
+		color: white;
+		font-size: 30PX;
+		position: absolute;
+		margin-left: 650px;
+		bottom: 30px;
+		z-index: 20;
+		
+	}
+
+	.head .point1 {
+			background-color: rgb(129,117,110);
+			width: 10px;
+			height: 10PX;
+			z-index: 999;
+			position: absolute;
+			left: 695px;
+			bottom: 36PX;
+			border-radius: 50%;
+
+	}
+
+	.head .point2{
+			background-color: rgb(136,126,89);
+			width: 10px;
+			height: 10PX;
+			z-index: 999;
+			position: absolute;
+			left: 715px;
+			bottom: 36PX;
+			border-radius: 50%;
+	}
+	.head .btn1,.head .btn2{
+		width: 200px;
+		height: 684px;
+		color: #ccc;
+		font-size: 38px;
+		opacity: 0;
+		position: absolute;		
+		z-index: 999;
+		text-align: center;
+		line-height: 684px;
+		font-weight: bold;
+		top: 64px;
+	} 
+	.head .btn1{
+		left: 0;	
+	} 
+	.head .btn1:hover{
+		color: #ccc;
+		opacity: 1;
+		background-color: rgba(0,0,0,0.02);	
+	} 
+	.head .btn2{
+		right: 0;	
+	} 
+	.head .btn2:hover{
+		color: #ccc;
+		opacity: 1;
+		background-color: rgba(0,0,0,0.02);	
+	} 
+	.head .two{
+		
+		color: white;
+		font-size: 30PX;
+		position: absolute;
+		margin-left: 650px;
+		bottom: 30px;
+		z-index: 9;
+		
+	}
+
+	.main{
+		width: 1140px;
+		height: 600PX;
+		border:1px solid rgba(0,0,0,0.0);
+		position: relative;
+		left: 10px;
+		top: 150px;
+		padding-left: 0px;
+		text-align: center;
+		display: flex;
+		justify-content: space-around;
+		overflow: hidden;
+
+	}
+	.font{
+		width: 430px;
+		height: 60px;
+		text-align: center;
+		margin: 0 auto;
+
+	}
+	.bang{
+		background-color: rgb(22,176,220);
+		width: 54px;
+		height: 30px;
+		color: white;
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 30px;
+		margin-left: 290px;
+		margin-top: -60px;
+	}
+	.font h3{
+		font-size: 28px;
+	}
+
+	.font p{
+		/*color: #5e7387;*/
+		font-size: 16px;
+		text-align: center;
+		color: rgba(0,0,0,0.5);
+	
+	}
+	.main-2{
+		width: 300px;
+		height: 300PX;
+		position: relative;	
+		display: inline-block;		
+		
+	}
+
+	.main-2>img{
+		border-radius: 50%;
+	}
+
+	.main-2>p{
+		text-align: center;
+		color: rgba(0,0,0,0.6);
+		font-size: 14px;
+
+	}
+
+	.main-2>h5{
+		text-align: center;
+		color: rgba(0,0,0,0.8);
+
+	}
+
+	.main-2>a{
+		display: inline-block;
+		width: 300px;
+		height: 27px;
+		background-color: rgb(249,104,104);
+		text-decoration: none;
+		font-size: 14px;
+		color: white;
+		padding-top: 8PX;
+
+	}
+
+	.box{
+		width: 100%;
+		height: 600px;
+		background-color: rgb(245,245,245);
+		overflow: hidden;
+
+	}
+
+
+	.box>h2{
+		text-align: center;
+		padding-top: 30px;
+
+	}
+
+	.box-1>p{
+		width: 290px;
+		color: rgba(0,0,0,0.7);
+		display: inline-block;
+		font-size: 14px;
+		font-family: YaHei;
+	}
+
+	.box-1>p>a{
+		text-decoration: none;
+		color: rgba(0,0,0,0.9);
+		font-size: 16px;
+		font-family: YaHei;
+		font-weight: bold;
+	}
+
+	.box-1>img{
+		width: 140px;
+		height: 90PX;
+		display: inline-block;
+		margin-left: 100px;
+	}
+
+	.box-2{
+		display: inline-block;
+		margin-left: 85px;
+	}
+	.box-2 div{
+		position: relative;
+		left: 0px;
+		opacity: 0;
+	
+	}
+	.box:hover .box-2 div{
+		position: relative;
+		transition: all .5s;
+		opacity: 1;
+	}
+
+	.box-3{
+		display: inline-block;
+		margin-left: 60px;
+
+	}
+	.box-3 div{
+		position: relative;
+		right: 0px;
+		transition: all 1s;
+		opacity: 0;
+	}
+	.box:hover .box-3 div{
+		position: relative;
+		transition: all .5s;
+		opacity: 1;
+	}
+
+	.foot{
+		padding-bottom: 60px;
+		text-align: center;
+		font-size: 14px;
+		margin-top: 40px;		
+		border-bottom:1px solid rgba(0,0,0,0.2) ;
+
+	}
+
+	.foot>img{
+		width: 430px;
+		height:270;
+	}
+
+	.c{
+		padding-top: 20px;
+		text-align: center;
+		width: 100%;
+		height: 120PX;
+		background-color: rgb(245,245,245);
+		margin-top: 20px;
+		position: relative;
+	}
+
+	.c>p{
+		color: rgba(0,0,0,0.3) ;
+		font-size: 14px;
+	}
+
+	.c>a{
+		color: blue;
+		text-decoration: none;
+	}
+
+	.c>a:hover {
+		
+		text-decoration: underline;
+	}
+
+	.c .icon-weixin{
+		width:5px;
+		height: 5px;
+		color: green;
+		margin-right: 10px;			
+		}
+
+	.c .icon-qq{
+		width:5px;
+		height: 5px;
+		color: blue;
+		margin-right: 10px;	
+	}
+
+	.c .icon-youxiang{
+		width:5px;
+		height: 5px;
+		color: orange;
+		position: absolute;		
+		margin-right: 10px;
+	}
+
+	.circular	.active{
+		background-color: orange;
+	}
+
+	.main .btn3{ 
+		width: 30px;
+		height: 50px;
+		color: grey;
+		position: absolute;
+		top: 100px;
+		left: 0px;
+		z-index: 999;
+		font-size: 38px;
+
+	}
+
+	.main .btn4{
+		width: 30px;
+		height: 50px;
+		color: grey;		
+		position: absolute;
+		z-index: 999;
+		top: 100px;
+		right: 0px;
+		font-size: 38px;
+
+	}
+	.main:hover .btn3{
+		color: white;
+		background-color: rgba(0,0,0,0.3);
+	}
+	.main:hover .btn4{
+		color: white;
+		background-color: rgba(0,0,0,0.3);
+	}
